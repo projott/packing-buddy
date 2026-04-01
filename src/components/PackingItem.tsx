@@ -43,6 +43,9 @@ export default function PackingItem({
     }
     if (e.key === "Escape") {
       setEditing(false);
+      if (!item.name.trim()) {
+        onDelete(item.id);
+      }
     }
   }
 

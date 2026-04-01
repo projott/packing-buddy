@@ -119,7 +119,8 @@ async function fetchHistorical(
   const avgLow = average(lows);
 
   const rainyDays = precipSums.filter((p) => p > 0.1).length;
-  const rainChance = (rainyDays / precipSums.length) * 100;
+  const rainChance =
+    precipSums.length > 0 ? (rainyDays / precipSums.length) * 100 : 0;
 
   return {
     avgHigh: Math.round(avgHigh),
