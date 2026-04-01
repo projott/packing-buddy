@@ -1,4 +1,4 @@
-import type { WeatherSummary } from "../types";
+import type { WeatherSummary } from "@/types";
 
 const GEOCODING_URL = "https://geocoding-api.open-meteo.com/v1/search";
 const FORECAST_URL = "https://api.open-meteo.com/v1/forecast";
